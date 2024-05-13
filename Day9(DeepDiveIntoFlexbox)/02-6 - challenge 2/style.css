@@ -104,5 +104,11 @@ h1 {
 }
 
 .below-content{
-    margin-top: 2em;
+    margin: 2em auto;    
+}
+.truncate{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
