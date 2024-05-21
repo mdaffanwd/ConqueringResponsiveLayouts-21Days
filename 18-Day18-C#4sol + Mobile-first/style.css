@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: "Playfair Display", sans-serif;
+  --primary-clr: #f3eed9;
+  --secondary-clr: #824936;
+  --dark-clr: #222c2a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-family: var(--secondary-font);
+  line-height: 1.1;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-family: var(--primary-font);
+}
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.intro {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f3eed9;
+  color: #824936;
+}
+.intro--quote {
+  letter-spacing: 0.5rem;
+  margin: -.6rem;
+  color: #222c2a;
+}
+
+.section-one h2,
+.section-two h2 {
+  text-align: center;
+}
+
+.section-one {
+  padding: 2em 1rem;
+  color: var(--dark-clr);
+}
+.section-one--title-dark {
+  color: var(--secondary-font-clr);
+}
+
+.section-two {
+  color: var(--primary-clr);
+}
+
+.section-two--top {
+  background-color: var(--dark-clr);
+  padding: 2rem 1rem;
+}
+.section-two--below {
+  background-color: var(--secondary-clr);
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 599px) {
+  .container {
+    width: 1128px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .intro--heading{
+    font-size: 3rem;
+  }
+  .row {
+    display: flex;
+  }
+  .col {
+    width: 100%;
+  }
+  .col + .col {
+    margin-left: 4em;
+  }
+}
