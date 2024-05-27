@@ -142,12 +142,14 @@ nav {
 }
 
 .main {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  /* margin-top: 3em; */
+  /* margin-bottom: 3em; */
+  background-color: red;
 }
 
 .primary-content {
   width: 62%;
+
 }
 
 .sidebar {
